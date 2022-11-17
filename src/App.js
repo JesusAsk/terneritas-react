@@ -1,13 +1,27 @@
 import './App.css'
-import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
+import ItemListContainer  from './components/ItemListContainer/ItemListContainer';
 import NavBar from './components/Navbar/NavBar';
+import { BrowserRouter , Routes , Route } from 'react-router-dom';
+
+
 
 function App() {
   return (
-    <>
+    
+    <BrowserRouter> 
     <NavBar/> 
-    <ItemListContainer name = "Bienvenido a las Terneritas , la mejor carne de quilmes"/>
-    </>
+    
+    <Routes>
+   
+     <Route path="/" element = {<ItemListContainer/>} />
+     <Route path="/category/Ternera" element = {<ItemListContainer/>} />
+     <Route path="/" element = {<ItemListContainer/>} />
+     
+
+    </Routes>
+    
+    </BrowserRouter>
+   
   );
 }
 

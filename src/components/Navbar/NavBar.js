@@ -1,6 +1,7 @@
-import React from 'react'
+import { NavLink} from 'react-router-dom'
 import CardWidget from '../CardWidget/CardWidget'
 import './NavBar.css'
+
 
 
 
@@ -10,36 +11,30 @@ const NavBar = () => {
         <h1 className='menu-title'> Carniceria y granja Las Terneritas </h1>
         <ul className='menu-items'>
             <li>
-                <a href='' className='menu-list'> Productos </a>
+                <NavLink to = "/"> Todos los Productos</NavLink> 
             </li>
 
             <li>
 
-                <a href=''className='menu-list'> Buscar </a>
-
-            </li> 
-
-            <li>
-
-                <a href=''className='menu-list'> Ternera </a>
+            <NavLink to = "/category/Ternera"> Ternera </NavLink>
 
             </li>
 
             <li>
 
-                <a href=''className='menu-list'> Cerdo </a>
+            <NavLink to = "/category/Cerdo"> Cerdo </NavLink>
 
             </li>
 
             <li>
 
-                <a href=''className='menu-list'> Pollo </a>
+            <NavLink to = "/category/Aves"> Aves </NavLink>
 
             </li>
 
             <li>
 
-                <a href=''className='menu-list'> Congelados </a>
+            <NavLink to = "/category/Congelados"> Congelados </NavLink>
 
             </li>
         </ul>
