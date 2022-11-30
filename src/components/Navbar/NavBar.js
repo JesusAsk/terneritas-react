@@ -1,4 +1,4 @@
-import { NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import CardWidget from '../CardWidget/CardWidget'
 import './NavBar.css'
 
@@ -22,7 +22,7 @@ const NavBar = () => {
 
             <li>
 
-            <NavLink to = "/category/Cerdo"> Cerdo </NavLink>
+            <NavLink to = "category/Cerdo"> Cerdo </NavLink>
 
             </li>
 
@@ -34,11 +34,18 @@ const NavBar = () => {
 
             <li>
 
-            <NavLink to = "/category/Congelados"> Congelados </NavLink>
+            <NavLink to = "category/Congelados"> Congelados </NavLink>
+
+            </li>
+
+            <li>
+
+            <NavLink to = "cart"> Carrito</NavLink>
 
             </li>
         </ul>
         <CardWidget/>
+
     </div>
 
     

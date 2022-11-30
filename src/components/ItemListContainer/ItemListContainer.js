@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
 import { Productos } from "../Productos/Productos";
-import ItemList from '../../ItemList/ItemList'
+import ItemList from '../ItemList/ItemList'
 import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
-  const categoryName = useParams(); 
-  console.log (categoryName);
+  const {category} = useParams(); 
+  
 
   const getProducts = new Promise ((resolve, reject) => {
     setTimeout(() => {
-      if (categoryName){
+      if (category){
         const filteredProductos = Productos.filter(() => {
-          return Productos.category === categoryName 
+          return Productos.category === category 
         });
         resolve (filteredProductos)
       } else {
