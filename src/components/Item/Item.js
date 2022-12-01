@@ -6,13 +6,13 @@ return (
     
     <div >
         <div>
-
             <img src={`images/imagenes/${producto.img}`} alt={producto.nombre} />
-            </div>
+        </div>
+
             <h2>{producto.nombre}</h2>
             <p > Precio: {producto.Precio}</p>
             
-        </div>
+    </div>
     
     
     </Link>

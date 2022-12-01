@@ -1,11 +1,12 @@
 
 
-const ItemDetail = ({Productos}) => {
+const ItemDetail = ({productSelected}) => {
   return (
     <div>
-        <h2>{Productos.nombre}</h2>
-        <h2>{Productos.precio}</h2>
-        <h2>{Productos.categoy}</h2>
+        
+        <h2>{productSelected.nombre}</h2>
+        <h2>{productSelected.Precio}</h2>
+        <h2>{productSelected.category}</h2>
 
         
     </div>

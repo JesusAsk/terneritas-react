@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
 
   const getProductos = () => {
     const productFiltered = Productos.filter((Productos)=> {
-      return Productos.id == id;
+      return Productos.id == id ;
 
     })
     console.log(productFiltered)
