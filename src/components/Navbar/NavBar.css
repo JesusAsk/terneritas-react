@@ -16,9 +16,7 @@
 
 .menu-items {
 
-    justify-content: space-between;
     list-style-type: none;
-    display: flex;
     flex-direction: row;
     margin-right: 300px;
 

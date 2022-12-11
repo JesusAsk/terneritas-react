@@ -20,12 +20,12 @@ const ItemListContainer = () => {
       resolve (Productos)
 
       }
-    }, 1000 )
+    }, 2000 )
   })
   
   useEffect(() => {
   getProducts.then((res) => setItems(res));
-  },[]);
+  },[category]);
   return (
     <div>
       <ItemList productList  = {items} />
